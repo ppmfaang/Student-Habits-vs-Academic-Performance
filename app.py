@@ -21,7 +21,8 @@ page = st.sidebar.selectbox(
 
 # ---------------- PAGE 1 ----------------
 if page == "Prediction":
-    st.title("🎯 Student Exam Score Predictor")
+    st.title("🎯 Student Performance Predictor")
+    st.markdown("Predict your academic performance based on your daily habits."
 
     study_hours = st.slider("Study Hours per Day", 0.0, 12.0, 2.0)
     attendance = st.slider("Attendance Percentage", 0.0, 100.0, 80.0)
