@@ -78,6 +78,20 @@ p, label {
     font-weight: 500;
     color: #ffffff;
 }
+/* Sidebar text color */
+section[data-testid="stSidebar"] * {
+    color: black ;
+}
+
+/* Main page text color */
+body {
+    color: black;
+}
+
+/* Labels (Study Hours etc.) */
+label {
+    color: black ;
+}
 
 /* 📦 Card Effect for Sections */
 .block-container {
