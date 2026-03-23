@@ -9,7 +9,7 @@ body {
 }
 
 
-section.main > div {
+section. main > div {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(12px);
     border-radius: 20px;
@@ -70,20 +70,20 @@ p, label {
 
 .stTabs [aria-selected="true"] {
     background: linear-gradient(90deg, #ff7e5f, #feb47b);
-    color: white;
+    color:blue;
 }
 
 /* Sliders */
 .stSlider label {
     font-weight: 500;
-    color: #ffffff;
+    color: blue;
 }
 /* Card Effect for Sections */
 .block-container {
     padding: 2rem;
 }
 .css-10trblm, .stMarkdown p {
-    color: Blue ;
+    color: blue ;
 }
 
 label {
