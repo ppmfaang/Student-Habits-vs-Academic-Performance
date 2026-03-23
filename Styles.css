@@ -73,19 +73,6 @@ p, label {
     color:blue;
 }
 
-/* Sliders */
-.stSlider label {
-    font-weight: 500;
-    color: blue;
-}
-/* Card Effect for Sections */
-.block-container {
-    padding: 2rem;
-}
-.css-10trblm, .stMarkdown p {
-    color: blue ;
-}
-
 label {
     color: #4da6ff !important;   /* nice blue */
     font-weight: 600;
