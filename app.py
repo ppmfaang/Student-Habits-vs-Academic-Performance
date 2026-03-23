@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 model = joblib.load("best_model.pkl")
 df = pd.read_csv("student_habits_performance.csv")
 def load_css():
-    with open("styles.css", encoding="utf-8") as f:
+    with open("Styles.css", encoding="utf-8") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 load_css()
