@@ -43,17 +43,24 @@ if page == "Prediction":
         # 🎯 Prediction
         st.success(f"Predicted Exam Score: {prediction:.2f}")
 
-        # 📊 Basic Feedback
+        # # 📊 Basic Feedback
+        # if prediction > 80:
+        #     st.success("Excellent! Maintain your current habits.")
+        # elif prediction > 50:
+        #     st.warning("Good, but improving study hours and sleep can help.")
+        # else:
+        #     st.error("Low performance. Focus more on study and reduce distractions.")
+
+        #  INSIGHTS SECTION (YOUR SIGNATURE FEATURE)
+        st.subheader("📌 Insights & Suggestions")
+        #  Basic Feedback
         if prediction > 80:
             st.success("Excellent! Maintain your current habits.")
         elif prediction > 50:
             st.warning("Good, but improving study hours and sleep can help.")
         else:
             st.error("Low performance. Focus more on study and reduce distractions.")
-
-        # 🔥 INSIGHTS SECTION (YOUR SIGNATURE FEATURE)
-        st.subheader("📌 Insights & Suggestions")
-
+            
         if attendance < 60:
             st.warning("Low attendance is negatively affecting your performance.")
 
@@ -69,7 +76,7 @@ if page == "Prediction":
         if ptj_encoded == 1 and study_hours < 3:
             st.info("Balancing part-time work and studies better can help improve performance.")
 
-        # 🔥 ADVANCED REASONING
+        #  ADVANCED REASONING
         if prediction < 50 and attendance < 60:
             st.error("Your low score is strongly linked to poor attendance.")
 
